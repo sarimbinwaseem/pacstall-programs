@@ -1,13 +1,14 @@
 pkgname="rpi-imager-app"
 gives="rpi-imager"
 arch=("amd64" "arm64")
-pkgver="1.9.4"
+pkgver="1.9.6"
+repology=("project: rpi-imager")
 pkgdesc="The home of Raspberry Pi Imager, a user-friendly tool for creating bootable media for Raspberry Pi devices"
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
 source_amd64=("https://github.com/raspberrypi/${gives}/releases/download/v${pkgver}/Raspberry_Pi_Imager-${pkgver}-x86_64.AppImage")
-sha256sums_amd64=("80643c8556ee468b6fa2e84f4642790f8e16495352cef171c59b453e6693bf7e")
+sha256sums_amd64=("029a8d25d490524e632cbc760c10fface2d453e88d1083dad4274d20481f3cfc")
 source_arm64=("https://github.com/raspberrypi/${gives}/releases/download/v${pkgver}/Raspberry_Pi_Imager-${pkgver}-aarch64.AppImage")
-sha256sums_arm64=("b4eb066e04e1fcbde1bda65612a025f5197a663b7a1b4981af53c4e0ce8a9f53")
+sha256sums_arm64=("abdedf1d587afd46a32cf2fe9d9a4188cfe9803b05fb72e443ce74b24b8b8585")
 
 package() {
   if [[ ${CARCH} == amd64 ]]; then
